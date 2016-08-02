@@ -1,0 +1,25 @@
+﻿switch (command)
+{
+   
+
+    case "help":
+        Console.WriteLine("list, l    - for connections list");
+        Console.WriteLine("con {id}, c {id} - connect to console by connection id");
+        Console.WriteLine("exit       - to disconnect from user and to exit the program");
+
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("update, up - to disconnect from user and to exit the program");
+        Console.WriteLine("unins, un  - to disconnect from user and to exit the program");
+        Console.WriteLine("migrate, m - to disconnect from user and to exit the program");
+        Console.WriteLine("migrateall {host}, ma {host} - to disconnect from user and to exit the program");
+        Console.WriteLine("migrate {host}, m {host} - change server address in format server:port");
+        Console.WriteLine("put {host}, p {host} - put file from ftp server to client");
+        Console.WriteLine("get {host}, g {host} - get file from client to ftp server");
+        Console.WriteLine("sftp - set ftp settings");
+        Console.ResetColor();
+
+        Console.WriteLine("help     - this help");
+        Console.WriteLine("Version of the server is 0.1");
+        break;
+    default: Console.WriteLine($"Unknown command \"{command}\""); break;
+}
